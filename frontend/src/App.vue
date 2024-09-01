@@ -57,7 +57,7 @@ const captureImage = () => {
 
 const sendImageToBackend = async (imageData) => {
   try {
-    const response = await fetch('http://localhost:5000/measure', {
+    const response = await fetch('/api/measure', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
